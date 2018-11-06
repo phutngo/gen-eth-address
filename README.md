@@ -54,7 +54,7 @@ __*Note that the method by which randomness is passed to the private key generat
 ```javascript
 function generatePrivKey(mnemonic){
     const seed = generateHexSeed(mnemonic)
-    return hdkey.fromMasterSeed(seed).derivePath(`m/44'/60'/0'/0`).getWallet().getPrivateKey()
+    return hdkey.fromMasterSeed(seed).derivePath(`m/44'/60'/0'/0/0`).getWallet().getPrivateKey()
 }
 ```
 With the private key, we can generate the public key. Import the ethereumjs wallet and derive the public key
