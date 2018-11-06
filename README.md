@@ -35,8 +35,8 @@ var isValid = BIP39.validateMnemonic("Enter your mnemonic here")
 
 With this mnemonic, you can generate a seed from which to generate a private key. Add the following line to main.js
 ```javascript
-function generateHexSeed(mnemonic){
-    return BIP39.mnemonicToSeedHex(mnemonic)
+function generateSeed(mnemonic){
+    return BIP39.mnemonicToSeed(mnemonic)
 }
 ```
 
@@ -49,11 +49,11 @@ To generate a private key from the hex seed, we will to use the [ethereumjs-wall
 const hdkey = require('ethereumjs-wallet/hdkey')
 ```
 
-__*Note that the method by which randomness is passed to the private key generator in this demonstration application is different than other common tools such as [myetherwallet.com](https://www.myetherwallet.com/) or the [Metamask chrome extension](https://metamask.io/). Explore a much more robust address derivation application at [iancoleman.io](https://iancoleman.io/bip39/)*__
+__*Explore a much more robust address derivation application at [iancoleman.io](https://iancoleman.io/bip39/)*__
 
 ```javascript
 function generatePrivKey(mnemonic){
-    const seed = generateHexSeed(mnemonic)
+    const seed = generateSeed(mnemonic)
     return hdkey.fromMasterSeed(seed).derivePath(`m/44'/60'/0'/0/0`).getWallet().getPrivateKey()
 }
 ```
@@ -88,7 +88,7 @@ function deriveEthAddress(pubKey){
 }
 ```
 
-You can check this private key and address against [myetherwallet](https://www.myetherwallet.com/#view-wallet-info). Select restore from private key and verify that the derived address matches the one in this app.
+You can check this mnemonic, private key and address against [myetherwallet](https://www.myetherwallet.com/#view-wallet-info). Select restore from mnemonic or private key and verify that the derived address matches the one in this app.
 
 
 ## Using your key
