@@ -5,13 +5,13 @@ Public pey cryptography and digital signatures are a foundational technology tha
 First, we are going to generate a private key, derive public keys from the private key and determine the
 associated accounts. 
 
-To get started, open a command terminal clone this repository: 
+To get started, open a command terminal and clone this repository: 
 
 ```
 $ git clone https://github.com/ConsenSys-Academy/ethereum-address-generator-js.git
 ```
 
-From the terminal where you cloned the repository, change the directory to the *ethereum-address-generator-js* git folder: 
+From the terminal, change the directory to the *ethereum-address-generator-js* git folder: 
 
 ```
 $ cd ethereum-address-generator-js
@@ -24,12 +24,12 @@ $ npm install
 $ npm run watch         # this will watch for updates in main.js and update bundle.js
 ```
 
-Now, open a new terminal and run the following command to serve the web interface. 
+Next, open a new terminal and run the following command to serve the web interface. 
 ```
 $ npm run reload        # this will serve the app @ localhost:8081 and refresh the page when there are updates 
 ```
 
-Next, open the *index.html* file in a web browser from within the *ethereum-address-generator-js* folder. The page you opened from *index.html* will now automatically refresh as you make updates to the *main.js* file in the steps below.
+Now, open a new window in a web browser and go to [localhost:8081](localhost:8081). This page will automatically refresh as you make updates to the *main.js* file in the steps below.
 
 If you run into any problems while implementing this demo application, try opening the developer tools in the browser (Ctrl + Shift + I or F12) and checking the 'Console' tab.
 
