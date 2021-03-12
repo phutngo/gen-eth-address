@@ -3,15 +3,34 @@
 Public pey cryptography and digital signatures are a foundational technology that enable blockchains to work. In this project you are going to get your hands dirty and understand how they work at the code level. You will be using Javascript and a simple web interface to see what is going on.
 
 First, we are going to generate a private key, derive public keys from the private key and determine the
-associated accounts.
+associated accounts. 
 
-To get started clone the project and
+To get started, open a command terminal and clone this repository: 
+
+```
+$ git clone https://github.com/ConsenSys-Academy/ethereum-address-generator-js.git
+```
+
+From the terminal, change the directory to the *ethereum-address-generator-js* git folder: 
+
+```
+$ cd ethereum-address-generator-js
+```
+
+From the same terminal, run the following commands to run the web interface we will use for this lesson: 
 
 ```
 $ npm install
 $ npm run watch         # this will watch for updates in main.js and update bundle.js
+```
+
+Next, open a new terminal and run the following command to serve the web interface. 
+```
 $ npm run reload        # this will serve the app @ localhost:8081 and refresh the page when there are updates 
 ```
+
+Now, open a new window in a web browser and enter *localhost:8081* in the address bar. This page will automatically refresh as you make updates to the *main.js* file in the steps below.
+
 If you run into any problems while implementing this demo application, try opening the developer tools in the browser (Ctrl + Shift + I or F12) and checking the 'Console' tab.
 
 ## Generating randomness
