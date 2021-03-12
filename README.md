@@ -17,7 +17,7 @@ From the terminal, change the directory to the *ethereum-address-generator-js* g
 $ cd ethereum-address-generator-js
 ```
 
-From the same terminal, run the following commands to install and run the web interface we will use for this lesson: 
+From the same terminal, run the following commands to run the web interface we will use for this lesson: 
 
 ```
 $ npm install
@@ -29,7 +29,7 @@ Next, open a new terminal and run the following command to serve the web interfa
 $ npm run reload        # this will serve the app @ localhost:8081 and refresh the page when there are updates 
 ```
 
-Now, open a new window in a web browser and go to [localhost:8081](localhost:8081). This page will automatically refresh as you make updates to the *main.js* file in the steps below.
+Now, open a new window in a web browser and go to <localhost:8081>. This page will automatically refresh as you make updates to the *main.js* file in the steps below.
 
 If you run into any problems while implementing this demo application, try opening the developer tools in the browser (Ctrl + Shift + I or F12) and checking the 'Console' tab.
 
